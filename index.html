@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b68">
+<title>MRKIT COE | Examination Management</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brandmark">MR</div>
+  <div><strong>MRKIT COE</strong><small>Controller of Examinations</small></div>
+  <span class="status">STARTER DEMO</span>
+</header>
+<main>
+  <section class="welcome">
+    <p class="eyebrow">MRK INSTITUTE OF TECHNOLOGY</p>
+    <h1>Examination Management</h1>
+    <p>Student records, academic regulations, marks and results — in one place.</p>
+    <div class="notice"><strong>Demo only:</strong> this starter does not save official student records or provide secure login yet. Connect and test the database and permissions before entering real data.</div>
+  </section>
+  <section class="stats">
+    <article><span>Students</span><strong id="studentCount">0</strong><small>Demo records only</small></article>
+    <article><span>Departments</span><strong>9</strong><small>Configure as applicable</small></article>
+    <article><span>Regulations</span><strong>R21 / R25 / R26</strong><small>Editable setup</small></article>
+  </section>
+  <section class="panel">
+    <div class="panelhead"><div><h2>Student Database</h2><p>Try the interface using sample data only.</p></div>
+      <button id="addDemo">Add sample</button></div>
+    <div class="filters">
+      <input id="search" placeholder="Search register no. or student name" aria-label="Search students">
+      <select id="dept" aria-label="Filter department"><option value="">All departments</option><option>Mechanical</option><option>ECE</option><option>EEE</option><option>CSE</option><option>Civil</option><option>IT</option><option>AI & DS</option><option>AI & ML</option><option>Biomedical</option></select>
+    </div>
+    <div class="tablewrap"><table><thead><tr><th>Register No.</th><th>Student Name</th><th>Department</th><th>Batch</th><th>Semester</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">No demo records yet. Tap “Add sample”.</td></tr></tbody></table></div>
+  </section>
+  <section class="panel modules">
+    <h2>Planned COE Modules</h2>
+    <div class="modulegrid">
+      <div><b>Student Master</b><span>Import Excel/CSV and maintain student profiles</span></div>
+      <div><b>Subjects & Regulations</b><span>Department, semester, subject code and regulation</span></div>
+      <div><b>Marks & Grades</b><span>Internal marks, results, grades and arrears</span></div>
+      <div><b>Reports</b><span>Grade sheets, arrear lists and pass percentage</span></div>
+      <div><b>Staff Accounts</b><span>Administrator-managed staff access</span></div>
+      <div><b>Backup & Audit</b><span>Backups and tracking of result changes</span></div>
+    </div>
+  </section>
+  <section class="panel next">
+    <h2>Next step: connect a secure online database</h2>
+    <ol>
+      <li>Create a Firebase project using the Google account managed by the institution.</li>
+      <li>Enable staff authentication and create a Firestore database.</li>
+      <li>Set administrator/staff roles and publish restrictive security rules.</li>
+      <li>Connect this interface to Firebase, test with dummy records, then deploy to Hosting.</li>
+    </ol>
+    <p><a href="https://console.firebase.google.com/" target="_blank" rel="noopener">Open Firebase Console ↗</a> · <a href="https://firebase.google.com/docs/hosting" target="_blank" rel="noopener">Hosting guide ↗</a></p>
+  </section>
+</main>
+<footer>MRKIT COE • Website starter template • Do not enter real student data in this demo.</footer>
+<script src="app.js"></script>
+</body>
+</html>

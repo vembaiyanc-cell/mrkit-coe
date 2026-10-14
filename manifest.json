@@ -1,0 +1,9 @@
+{
+  "name": "MRKIT COE",
+  "short_name": "MRKIT COE",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fa",
+  "theme_color": "#123b68",
+  "description": "MRKIT Controller of Examinations website starter"
+}
